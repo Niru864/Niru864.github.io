@@ -13,10 +13,10 @@ I am a passionate, multi-talented lifelong learner with a deep curiosity for tec
 
 My technical expertise spans Python, SQL, and various machine learning frameworks, and I'm continuously exploring advanced topics like generative AI and deep learning. I thrive on merging data-driven insights with real-world applications, solving complex problems one algorithm at a time.
 
-Beyond the technical realm, I love sharing my journey and experiences. I produce YouTube videos about skincare for people of colour, and I enjoy connecting with others through creative and analytical projects. You can also check out my [resume](#) (link to your resume) to see a detailed account of my work and achievements.
+Beyond the technical realm, I love sharing my journey and experiences. I produce YouTube videos about skincare for people of colour, and I enjoy connecting with others through creative and analytical projects. You can also check out my [LinkedIn] to see a detailed account of my work and achievements.
 
 Thanks for stopping by!
 
 
 [LinkedIn]: www.linkedin.com/in/rachel-abraham
-[Niru864]: https://github.com/Niru864/Niru864.github.io.git
+[Niru864]: https://github.com/Niru864/Niru864.github.io.git 
