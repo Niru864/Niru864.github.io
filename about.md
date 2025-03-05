@@ -5,14 +5,18 @@ permalink: /about/
 main_nav: true
 ---
 
-![alt text]({{ site.baseurl }}/assets/profile-placeholder.gif "Profile Picture"){:.profile}
+![Profile Picture]({{ site.baseurl }}/assets/your-profile-picture.jpg "Your Name"){:.profile}
 
-Centrarium is a custom theme for Jekyll, made by [Ben Centra][bencentra] for his own blog. He'd be humbled if you liked it enough to use it as well! Installation and configuration instructions can be found in the [GitHub repository](https://github.com/bencentra/centrarium).
+Hi, I'm **Rachel**!!
 
-This page is a good place to write about yourself, your project, your product, or whatever it is your site is for. You can replace the image above, or you can get rid of it entirely. 
+I am a passionate, multi-talented lifelong learner with a deep curiosity for technology and creativity. I recently graduated from the **University of Michigan, Ann Arbor** in May 2024, following my undergraduate studies at the **University of Waterloo** in June 2017 in Canada. My academic background in Data Science and Machine Learning has set the stage for my focus on computational linguistics, natural language processing (NLP), readability, and the evaluation of large language models.
 
-You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/). And you can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+My technical expertise spans Python, SQL, and various machine learning frameworks, and I'm continuously exploring advanced topics like generative AI and deep learning. I thrive on merging data-driven insights with real-world applications, solving complex problems one algorithm at a time.
 
-[centrarium]: https://github.com/bencentra/centrarium
-[bencentra]: http://bencentra.com
-[jekyll]: https://github.com/jekyll/jekyll
+Beyond the technical realm, I love sharing my journey and experiences. I produce YouTube videos about skincare for people of colour, and I enjoy connecting with others through creative and analytical projects. You can also check out my [resume](#) (link to your resume) to see a detailed account of my work and achievements.
+
+Thanks for stopping by!
+
+
+[LinkedIn]: www.linkedin.com/in/rachel-abraham
+[Niru864]: https://github.com/Niru864/Niru864.github.io.git
