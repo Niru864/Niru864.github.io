@@ -1,0 +1,18 @@
+// _custom.scss
+$primary-color: #800080;
+$secondary-color: #FFA500;
+$main-font: "Roboto", sans-serif;
+
+body {
+  font-family: $main-font;
+  background-color: #f9f9f9;
+}
+
+.site-header {
+  background-color: $primary-color;
+}
+
+.site-footer {
+  background-color: $secondary-color;
+  color: #fff;
+}
