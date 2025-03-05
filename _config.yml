@@ -92,8 +92,8 @@ social:
 # Social sharing protocols
 protocols:
   fb_image: "/assets/logo.png"          # Update with your own logo if needed
-  fb_image_width: 700
-  fb_image_height: 700
+  fb_image_width: 1000
+  fb_image_height: 1000
   fb_image_type: "image/png"
 
   twitter_image: "/assets/logo.png"       # Update with your own logo if needed
