@@ -5,7 +5,7 @@ permalink: /about/
 main_nav: true
 ---
 
-![Profile Picture]({{ site.baseurl }}/assets/your-profile-picture.jpg "Your Name"){:.profile}
+![Profile Picture]({{ site.baseurl }}/assets/profile_pic.png "Rachel"){:.profile}
 
 Hi, I'm **Rachel**!!
 
