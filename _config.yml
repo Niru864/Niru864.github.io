@@ -84,17 +84,13 @@ social:
 
 
 # Navigation Links
-nav:
-  - title: Home
-    url: /
-  - title: Projects
-    url: /projects
-  - title: Research
-    url: /research
-  - title: Blog
-    url: /blog
-  - title: Contact
-    url: /contact
+main_nav:
+  - title: "About Me"
+    url: /about/
+  - title: "Research"
+  url: /research/
+  - title: "Projects"
+  url: /projects/
   
 
 # Social sharing protocols
