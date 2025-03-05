@@ -1,5 +1,6 @@
 ---
 layout: page
+<h1 class="bounce">My Research</h1
 title: Research
 permalink: /research/
 main_nav: true
