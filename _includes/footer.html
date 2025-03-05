@@ -8,7 +8,7 @@
 
       <p><strong>Site Map</strong></p>
       <ul class="pages">
-				{% include nav_links.html %}
+        {% include nav_links.html %}
       </ul>
     </div>
 
@@ -70,16 +70,15 @@ $(document).ready(function() {
     });
   });
 
-	// Enable tooltips via Tippy.js
-	if (Array.isArray(window.tooltips)) {
-		window.tooltips.forEach(function(tooltip) {
-			var selector = tooltip[0];
-			var config = tooltip[1];
-			tippy(selector, config);
-		})
-	}
+  // Enable tooltips via Tippy.js
+  if (Array.isArray(window.tooltips)) {
+    window.tooltips.forEach(function(tooltip) {
+      var selector = tooltip[0];
+      var config = tooltip[1];
+      tippy(selector, config);
+    })
+  }
 });
-
 </script>
 
 {% if page.custom_js %}
@@ -90,7 +89,7 @@ $(document).ready(function() {
 {% endif %}
 
 {% if site.ga_tracking_id %}
-<!-- Google Analytics -->
+<!-- Google Analytics (Universal Analytics) -->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -101,5 +100,16 @@ $(document).ready(function() {
     'page': '{{ page.url }}',
     'title': '{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}'
   });
+</script>
+{% endif %}
+
+{% if site.ga4_tracking_id %}
+<!-- Google Analytics GA4 Tracking Code -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga4_tracking_id }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ site.ga4_tracking_id }}');
 </script>
 {% endif %}
