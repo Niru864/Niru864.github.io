@@ -20,3 +20,12 @@ body {
   background-color: $secondary-color;
   color: #fff;
 }
+
+.navigation-wrapper {
+  background-color: #fff; // or transparent if you want the image behind it
+  padding: 1rem;
+
+  .logo img {
+    max-height: 50px; // Keep the logo small
+  }
+}
