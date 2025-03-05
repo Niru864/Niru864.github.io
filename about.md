@@ -9,7 +9,7 @@ main_nav: true
 
 Hi, I'm **Rachel**!!
 
-I am a passionate, multi-talented lifelong learner with a deep curiosity for technology and creativity. I recently graduated from the **University of Michigan, Ann Arbor** in May 2024, following my undergraduate studies at the **University of Waterloo** in June 2017 in Canada. My academic background in Data Science and Machine Learning has set the stage for my focus on computational linguistics, natural language processing (NLP), readability, and the evaluation of large language models.
+I am a passionate, multi-talented lifelong learner with a deep curiosity for technology and creativity. I recently graduated from the **University of Michigan, Ann Arbor** in May 2024, following my undergraduate studies at the **University of Waterloo** in June 2017 in Canada. My academic background in Data Science and Machine Learning has set the stage for my focus on computational linguistics, natural language processing, text readability, and the evaluation of large language models.
 
 My technical expertise spans Python, SQL, and various machine learning frameworks, and I'm continuously exploring advanced topics like generative AI and deep learning. I thrive on merging data-driven insights with real-world applications, solving complex problems one algorithm at a time.
 
