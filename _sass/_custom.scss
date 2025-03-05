@@ -9,8 +9,12 @@ body {
 }
 
 .site-header {
-  background-color: $primary-color;
+  background-color: transparent !important;
+  background-image: none !important; // If there's an image overlay
+  // Optional: reduce or remove padding if you don't want a tall block
+  padding: 0 !important;
 }
+
 
 .site-footer {
   background-color: $secondary-color;
