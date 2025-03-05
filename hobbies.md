@@ -2,7 +2,7 @@
 layout: page
 title: Hobbies
 permalink: /hobbies/
-main_nav: true
+main_nav: False
 ---
 
 ## My Hobbies
