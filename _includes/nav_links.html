@@ -1,5 +1,13 @@
-{% for page in site.pages %}
-	{% if page.title and page.main_nav == true %}
-	<li class="nav-link"><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-	{% endif %}
-{% endfor %}
+<ul>
+  {% for page in site.pages %}
+    {% if page.title and page.main_nav == true %}
+    <li class="nav-link">
+      <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+    </li>
+    {% endif %}
+  {% endfor %}
+
+  <!-- Manually added links -->
+  <li><a href="{{ '/research/' | prepend: site.baseurl }}">Research</a></li>
+  <li><a href="{{ '/projects/' | prepend: site.baseurl }}">Projects</a></li>
+</ul>
