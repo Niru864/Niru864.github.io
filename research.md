@@ -17,4 +17,4 @@ Here’s an overview of my research work:
 - **Description**: Developing interactive visualizations for large datasets.
 - **Publication**: [Link to Paper](#)
 
-I work for the University of Michigan's School of Information, within Kevyn Collins-Thompson's resaerch group.
+I work for the University of Michigan's School of Information, within Kevyn Collins-Thompson's research group.
