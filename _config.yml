@@ -14,7 +14,7 @@ subtitle: "Welcome to my Github!"
 email: rachel6ad@gmail.com
 name: Rachel Abraham
 description: >
-  This is a portion of my life and who I am.
+  This is a <em>just</em> portion of my life.
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
@@ -83,7 +83,18 @@ social:
     share: true
 
 
-
+# Navigation Links
+nav:
+  - title: Home
+    url: /
+  - title: Projects
+    url: /projects
+  - title: Research
+    url: /research
+  - title: Blog
+    url: /blog
+  - title: Contact
+    url: /contact
   
 
 # Social sharing protocols
