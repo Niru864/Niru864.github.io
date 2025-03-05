@@ -4,7 +4,6 @@
 @charset "utf-8";
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-// Includes Bourbon, Neat, and Bitters (thanks, thoughtbot!)
 @import
   "bourbon/bourbon",
   "base/base",
@@ -12,30 +11,5 @@
   "layout"
 ;
 
-// ---------------------------------------
-// Your custom overrides go below
-// ---------------------------------------
-
-// Example variables
-$primary-color: #800080; // Purple
-$secondary-color: #FFA500; // Orange
-$main-font: "Roboto", sans-serif;
-
-// Example usage
-body {
-  font-family: $main-font;
-  background-color: #f9f9f9;
-  color: #333;
-}
-
-// Overriding or adding custom classes
-.site-header {
-  background-color: $primary-color;
-  padding: 1rem;
-}
-
-.site-footer {
-  background-color: $secondary-color;
-  color: #fff;
-  padding: 1rem;
-}
+// Import your custom overrides at the end
+@import "custom"; // This points to _custom.scss in the _sass folder
