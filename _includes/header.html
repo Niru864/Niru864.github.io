@@ -1,17 +1,26 @@
 <header class="site-header">
   <div class="header-top">
-    <!-- No logo, just a nav -->
+    <!-- Main navigation with mobile menu toggle -->
     <nav class="main-navigation">
-      <ul>
+      <!-- Hamburger menu button (mobile) -->
+      <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">
+        <i class="fa fa-bars"></i>
+      </a>
+
+      <!-- Navigation links -->
+      <ul id="js-navigation-menu" class="navigation-menu">
         <li><a href="#projects">Projects</a></li>
         <li><a href="#resume">Resume</a></li>
         <li><a href="#research">Research</a></li>
         <li><a href="#hobbies">Hobbies</a></li>
       </ul>
     </nav>
-    <!-- Optional: a place for search icons, social links, etc. -->
+
+    <!-- Optional actions (e.g., search icon, social links) -->
     <div class="header-actions">
-      <!-- e.g., <a href="#"><i class="fa fa-search"></i></a> -->
+      <!-- Example:
+      <a href="#"><i class="fa fa-search"></i></a>
+      -->
     </div>
   </div>
 </header>
