@@ -8,42 +8,46 @@ layout: null
     {% include head.html %}
   </head>
   <body>
-    {% include header.html %}
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero-section">
-      <div class="hero-content">
-        <h1>Rachel Abraham</h1>
-        <p>
-          Welcome to my github!
-        </p>
-      </div>
-    </section>
+    <!-- Centered Container -->
+    <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+      {% include header.html %}
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section">
-      <h2>Projects</h2>
-      <p>Your projects content goes here.</p>
-    </section>
+      <!-- Hero Section -->
+      <section id="hero" class="hero-section">
+        <div class="hero-content">
+          <h1>Rachel Abraham</h1>
+          <p>Welcome to my github!</p>
+        </div>
+      </section>
 
-    <!-- Resume Section -->
-    <section id="resume" class="resume-section">
-      <h2>Resume</h2>
-      <p>Your resume content goes here.</p>
-    </section>
+      <!-- Projects Section -->
+      <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+        <p>Your projects content goes here.</p>
+      </section>
 
-    <!-- Research Section -->
-    <section id="research" class="research-section">
-      <h2>Research</h2>
-      <p>Your research content goes here.</p>
-    </section>
+      <!-- Resume Section -->
+      <section id="resume" class="resume-section">
+        <h2>Resume</h2>
+        <p>Your resume content goes here.</p>
+      </section>
 
-    <!-- Hobbies Section -->
-    <section id="hobbies" class="hobbies-section">
-      <h2>Hobbies</h2>
-      <p>Your hobbies content goes here.</p>
-    </section>
+      <!-- Research Section -->
+      <section id="research" class="research-section">
+        <h2>Research</h2>
+        <p>Your research content goes here.</p>
+      </section>
 
-    {% include footer.html %}
+      <!-- Hobbies Section -->
+      <section id="hobbies" class="hobbies-section">
+        <h2>Hobbies</h2>
+        <p>Your hobbies content goes here.</p>
+      </section>
+
+      {% include footer.html %}
+    </div>
+    <!-- End Centered Container -->
+
   </body>
 </html>
