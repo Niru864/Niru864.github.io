@@ -1,14 +1,13 @@
 <!-- footer.html -->
 <footer class="site-footer"
         style="width: 100%; background: #6faed9; text-align: center; padding: 2rem 0;">
-  <!-- We can remove the .wrapper class, or override it with inline style -->
   <div class="wrapper" style="max-width: 900px; margin: 0 auto;">
-
-    <!-- Only keeping the Contact section -->
-    <div class="site-contact">
+    <div class="site-contact" style="text-align: center;">
       <p><strong>Contact</strong></p>
-      <ul class="social-media-list" style="list-style: none; padding: 0; margin: 0;">
-        <li>
+      <!-- Make ul inline-block, so the list is centered in the footer. -->
+      <ul class="social-media-list"
+          style="list-style: none; margin: 0 auto; padding: 0; display: inline-block; text-align: center;">
+        <li style="margin: 0.5rem 0;">
           <a href="mailto:{{ site.email }}">
             <i class="fa fa-envelope-o"></i>
             <span class="username">{{ site.email }}</span>
@@ -16,7 +15,7 @@
         </li>
         {% for social in site.social %}
           {% if social.url != "" %}
-          <li>
+          <li style="margin: 0.5rem 0;">
             <a href="{{ social.url }}" title="{{ social.desc }}">
               <i class="fa fa-{{ social.icon }}"></i>
               <span class="username">
