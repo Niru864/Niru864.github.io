@@ -1,14 +1,12 @@
+<!-- footer.html -->
 <footer class="site-footer">
   <div class="wrapper">
-    <h3 class="footer-heading">{{ site.title }}</h3>
 
-    <div class="site-navigation">
-      <p><strong>Site Map</strong></p>
-      <ul class="pages">
-        {% include nav_links.html %}
-      </ul>
-    </div>
+    <!-- Removed <h3 class="footer-heading">{{ site.title }}</h3> -->
 
+    <!-- Removed the Site Map section entirely -->
+
+    <!-- Kept the "Contact" section -->
     <div class="site-contact">
       <p><strong>Contact</strong></p>
       <ul class="social-media-list">
@@ -18,7 +16,6 @@
             <span class="username">{{ site.email }}</span>
           </a>
         </li>
-
         {% for social in site.social %}
           {% if social.url != "" %}
           <li>
@@ -37,15 +34,8 @@
         {% endfor %}
       </ul>
     </div>
+    <!-- Removed the "Subscribe via RSS" / site signature section -->
 
-    <div class="site-signature">
-      <p class="rss-subscribe text">
-        <strong>
-          Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a>
-        </strong>
-      </p>
-      <p class="text">{{ site.description }}</p>
-    </div>
   </div>
 </footer>
 
