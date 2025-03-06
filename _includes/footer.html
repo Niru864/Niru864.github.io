@@ -1,15 +1,13 @@
 <!-- footer.html -->
-<footer class="site-footer">
-  <div class="wrapper">
+<footer class="site-footer"
+        style="width: 100%; background: #6faed9; text-align: center; padding: 2rem 0;">
+  <!-- We can remove the .wrapper class, or override it with inline style -->
+  <div class="wrapper" style="max-width: 900px; margin: 0 auto;">
 
-    <!-- Removed <h3 class="footer-heading">{{ site.title }}</h3> -->
-
-    <!-- Removed the Site Map section entirely -->
-
-    <!-- Kept the "Contact" section -->
+    <!-- Only keeping the Contact section -->
     <div class="site-contact">
       <p><strong>Contact</strong></p>
-      <ul class="social-media-list">
+      <ul class="social-media-list" style="list-style: none; padding: 0; margin: 0;">
         <li>
           <a href="mailto:{{ site.email }}">
             <i class="fa fa-envelope-o"></i>
@@ -34,8 +32,6 @@
         {% endfor %}
       </ul>
     </div>
-    <!-- Removed the "Subscribe via RSS" / site signature section -->
-
   </div>
 </footer>
 
