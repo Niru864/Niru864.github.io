@@ -1,21 +1,42 @@
-<!
-<header class="navigation" role="banner">
-  <div class="navigation-wrapper">
-    <a href="{{ site.baseurl }}/" class="logo">
-      {% if site.logo %}
-      <img src="{{ site.logo | prepend: site.baseurl }}" alt="{{ site.title }}">
-      {% else %}
-      <span>{{ site.title }}</span>
-      {% endif %}
-    </a>
-    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <nav role="navigation">
-      <ul id="js-navigation-menu" class="navigation-menu show">
-        {% include nav_links.html %}
+<header class="site-header" role="banner">
+  <!-- Top navigation bar -->
+  <div class="header-top">
+    <div class="logo">
+      <a href="{{ site.baseurl }}/">
+        {% if site.logo %}
+          <img src="{{ site.logo | prepend: site.baseurl }}" alt="{{ site.title }}">
+        {% else %}
+          <span>{{ site.title }}</span>
+        {% endif %}
+      </a>
+    </div>
+
+    <!-- Primary navigation -->
+    <nav class="main-navigation" role="navigation">
+      <!-- Replace with your own static links OR use your existing nav_links include -->
+      <ul>
+        <li><a href="{{ site.baseurl }}/">Home</a></li>
+        <li><a href="{{ site.baseurl }}/blog/">Blog</a></li>
+        <li><a href="{{ site.baseurl }}/authors/">Authors</a></li>
+        <li><a href="{{ site.baseurl }}/videos/">Videos</a></li>
+        <li><a href="{{ site.baseurl }}/pages/">Pages</a></li>
       </ul>
     </nav>
+
+    <!-- Optional search icon (or other header actions) -->
+    <div class="header-actions">
+      <a href="#">
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Hero area -->
+  <div class="header-hero">
+    <h1 class="hero-title">Thoughts, stories, and ideas.</h1>
+    <p class="hero-subtitle">
+      Don’t limit yourself. Many people limit themselves to what they think they can do. 
+      You can go as far as your mind lets you. What you believe, remember, you can achieve.
+    </p>
   </div>
 </header>
--->
