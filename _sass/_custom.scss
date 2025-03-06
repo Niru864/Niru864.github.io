@@ -1,18 +1,66 @@
-// _custom.scss
+// ------------------------------
+// Navigation styling
+// ------------------------------
+.main-navigation .navigation-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;  // horizontally
+  gap: 1.5rem;    // spacing between links
+}
 
-// Remove bullet points and reset spacing for navigation
-.main-navigation ul {
+.main-navigation .navigation-menu li {
+  margin: 0; // no extra spacing
+}
+
+.main-navigation .navigation-menu a {
+  text-decoration: none;
+  color: #333;
+  &:hover {
+    color: #555;
+  }
+}
+
+// Remove bullet points in footer site map
+.site-navigation .pages {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.main-navigation li {
-  display: inline-block;  // Change to flex if desired
-  margin-right: 1.5rem;
+// Optional: style each item in the site map
+.site-navigation .pages li {
+  margin: 0.5rem 0;  // or display inline, if you prefer
 }
 
-// Single-Page Design: Hero Section
+// ------------------------------
+// Header
+// ------------------------------
+.site-header {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  position: fixed;  // if you want it to stay at top on scroll
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+
+  .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+}
+
+// Add top padding so content doesn't hide behind fixed header
+body {
+  padding-top: 80px; // Adjust based on your header height
+}
+
+// ------------------------------
+// Hero Section
+// ------------------------------
 .hero-section {
   display: flex;
   flex-direction: column;
@@ -34,49 +82,14 @@
   }
 }
 
-// Projects Section
-.projects-section {
-  padding: 2rem 1rem;
-  background: #fff;
-}
-
-// Resume Section
-.resume-section {
-  padding: 2rem 1rem;
-  background: #f9f9f9;
-}
-
-// Research Section
-.research-section {
-  padding: 2rem 1rem;
-  background: #fff;
-}
-
-// Hobbies Section
+// ------------------------------
+// Projects, Resume, Research, Hobbies
+// ------------------------------
+.projects-section,
+.resume-section,
+.research-section,
 .hobbies-section {
   padding: 2rem 1rem;
-  background: #f9f9f9;
-}
-
-// Header Styles
-.site-header {
-  background: #fff;
-  border-bottom: 1px solid #eee;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 999;
-  
-  .header-top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-  }
-}
-
-// Body padding to prevent content hiding behind the fixed header
-body {
-  padding-top: 80px; // Adjust this value to match your header height
+  background: #fff;  // alternate background if you prefer
+  // Or do .projects-section:nth-of-type(even) { background: #f9f9f9; } for alternating
 }
