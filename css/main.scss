@@ -11,6 +11,8 @@
   "neat/neat",
   "layout"
 ;
+@import "custom";  // This matches _custom.scss
+
 // Keyframe animation 
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
