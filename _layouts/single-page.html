@@ -1,0 +1,54 @@
+---
+layout: null
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    {% include header.html %}  <!-- If you have a separate header partial -->
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-content">
+        <h1>Thoughts, stories, and ideas.</h1>
+        <p>
+          Don’t limit yourself. Many people limit themselves to what they think 
+          they can do. You can go as far as your mind lets you. 
+          What you believe, remember, you can achieve.
+        </p>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog-section">
+      <h2>Latest Posts</h2>
+      <div class="posts-list">
+        {% for post in site.posts limit:6 %}
+          {% include post-card.html post=post %}
+        {% endfor %}
+      </div>
+      <!-- Optional: a button linking to a separate /blog/ if you have more posts -->
+    </section>
+
+    <!-- Authors Section -->
+    <section id="authors" class="authors-section">
+      <h2>Meet Our Authors</h2>
+      <div class="authors-list">
+        <!-- Show authors from _data/authors.yml or wherever you store them -->
+        <!-- Or just static content about each author -->
+      </div>
+    </section>
+
+    <!-- Videos Section -->
+    <section id="videos" class="videos-section">
+      <h2>Videos</h2>
+      <!-- Embed YouTube or Vimeo, or show thumbnails linking to your videos -->
+    </section>
+
+    <!-- Footer -->
+    {% include footer.html %}
+  </body>
+</html>
