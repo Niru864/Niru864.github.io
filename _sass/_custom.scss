@@ -1,95 +1,65 @@
-// ------------------------------
-// Navigation styling
-// ------------------------------
-.main-navigation .navigation-menu {
-  list-style: none;
+/* _custom.scss */
+
+/* 1) Site-wide or global resets */
+* {
   margin: 0;
   padding: 0;
-  display: flex;  // horizontally
-  gap: 1.5rem;    // spacing between links
+  box-sizing: border-box;
 }
 
-.main-navigation .navigation-menu li {
-  margin: 0; // no extra spacing
+/* 2) Remove bullet points from ALL top nav ULs 
+      (including anything under .main-navigation) */
+.main-navigation ul,
+.main-navigation li {
+  list-style: none; /* kill default bullets */
 }
 
-.main-navigation .navigation-menu a {
-  text-decoration: none;
-  color: #333;
-  &:hover {
-    color: #555;
-  }
+/* 3) Remove/hide hamburger icon 
+   If you see an actual .fa-bars or .hamburger class or some DOM element,
+   you can hide it with something like:
+*/
+.hamburger-menu,
+.fa-bars {
+  display: none !important;
 }
 
-// Remove bullet points in footer site map
-.site-navigation .pages {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-// Optional: style each item in the site map
-.site-navigation .pages li {
-  margin: 0.5rem 0;  // or display inline, if you prefer
-}
-
-// ------------------------------
-// Header
-// ------------------------------
-.site-header {
-  background: #fff;
-  border-bottom: 1px solid #eee;
-  position: fixed;  // if you want it to stay at top on scroll
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 999;
-
-  .header-top {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-  }
-}
-
-// Add top padding so content doesn't hide behind fixed header
-body {
-  padding-top: 80px; // Adjust based on your header height
-}
-
-// ------------------------------
-// Hero Section
-// ------------------------------
-.hero-section {
-  display: flex;
-  flex-direction: column;
+/* 4) Also style the navigation horizontally, if desired */
+.main-navigation ul {
+  display: flex;      /* horizontally lay them out */
+  gap: 1rem;          /* spacing between links */
   align-items: center;
-  justify-content: center;
-  padding: 4rem 1rem;
-  background-color: #fafafa;
-  text-align: center;
+}
 
-  h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-  }
-  p {
-    font-size: 1.2rem;
-    max-width: 600px;
-    margin: 0 auto;
-    color: #666;
+/* 5) Basic link styling for nav */
+.main-navigation a {
+  text-decoration: none;
+  color: #000;  /* or your preferred color */
+  font-weight: 600;
+
+  &:hover {
+    opacity: 0.8;
   }
 }
 
-// ------------------------------
-// Projects, Resume, Research, Hobbies
-// ------------------------------
-.projects-section,
-.resume-section,
-.research-section,
+/* 6) Add any additional custom or override styles below. 
+   For example, hero, projects, etc.
+*/
+.hero-section {
+  /* your custom hero styles */
+}
+
+.projects-section {
+  /* your custom project styles */
+}
+
+.resume-section {
+  /* your custom resume styles */
+}
+
+.research-section {
+  /* your custom research styles */
+}
+
 .hobbies-section {
-  padding: 2rem 1rem;
-  background: #fff;  // alternate background if you prefer
-  // Or do .projects-section:nth-of-type(even) { background: #f9f9f9; } for alternating
+  /* your custom hobbies styles */
 }
