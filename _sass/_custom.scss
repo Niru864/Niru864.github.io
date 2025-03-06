@@ -40,6 +40,43 @@
     opacity: 0.8;
   }
 }
+// Resume Section Styling
+.resume-section {
+  margin: 2rem 0;
+  padding: 1rem;
+  border-left: 4px solid #0077b6; // Adds a colored border to the left
+  background-color: #f9f9f9; // Light background for the section
+  border-radius: 8px; // Rounded corners
+
+  h2 {
+    color: #0077b6; // Blue color for the section title
+    margin-bottom: 1.5rem;
+  }
+
+  h3 {
+    color: #0077b6; // Blue color for subsection titles
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    list-style-type: square; // Square bullet points
+    margin-left: 1.5rem; // Indent the list
+  }
+
+  li {
+    margin-bottom: 0.5rem; // Space between list items
+    line-height: 1.6; // Improve readability
+  }
+
+  a {
+    color: #0077b6; // Blue color for links
+    text-decoration: none; // Remove underline
+    &:hover {
+      text-decoration: underline; // Add underline on hover
+    }
+  }
+}
 
 /* 6) Add any additional custom or override styles below. 
    For example, hero, projects, etc.
