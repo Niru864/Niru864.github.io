@@ -1,42 +1,17 @@
-<header class="site-header" role="banner">
-  <!-- Top navigation bar -->
+<header class="site-header">
   <div class="header-top">
-    <div class="logo">
-      <a href="{{ site.baseurl }}/">
-        {% if site.logo %}
-          <img src="{{ site.logo | prepend: site.baseurl }}" alt="{{ site.title }}">
-        {% else %}
-          <span>{{ site.title }}</span>
-        {% endif %}
-      </a>
-    </div>
-
-    <!-- Primary navigation -->
-    <nav class="main-navigation" role="navigation">
-      <!-- Replace with your own static links OR use your existing nav_links include -->
+    <!-- No logo, just a nav -->
+    <nav class="main-navigation">
       <ul>
-        <li><a href="{{ site.baseurl }}/">Home</a></li>
-        <li><a href="{{ site.baseurl }}/blog/">Blog</a></li>
-        <li><a href="{{ site.baseurl }}/authors/">Authors</a></li>
-        <li><a href="{{ site.baseurl }}/videos/">Videos</a></li>
-        <li><a href="{{ site.baseurl }}/pages/">Pages</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
       </ul>
     </nav>
-
-    <!-- Optional search icon (or other header actions) -->
+    <!-- Optional: a place for search icons, social links, etc. -->
     <div class="header-actions">
-      <a href="#">
-        <i class="fa fa-search" aria-hidden="true"></i>
-      </a>
+      <!-- e.g., <a href="#"><i class="fa fa-search"></i></a> -->
     </div>
-  </div>
-
-  <!-- Hero area -->
-  <div class="header-hero">
-    <h1 class="hero-title">Thoughts, stories, and ideas.</h1>
-    <p class="hero-subtitle">
-      Don’t limit yourself. Many people limit themselves to what they think they can do. 
-      You can go as far as your mind lets you. What you believe, remember, you can achieve.
-    </p>
   </div>
 </header>
