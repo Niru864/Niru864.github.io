@@ -1,6 +1,5 @@
 <footer class="site-footer">
   <div class="wrapper">
-
     <h3 class="footer-heading">{{ site.title }}</h3>
 
     <div class="site-navigation">
@@ -40,10 +39,13 @@
     </div>
 
     <div class="site-signature">
-      <p class="rss-subscribe text"><strong>Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></strong></p>
+      <p class="rss-subscribe text">
+        <strong>
+          Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a>
+        </strong>
+      </p>
       <p class="text">{{ site.description }}</p>
     </div>
-
   </div>
 </footer>
 
@@ -59,17 +61,7 @@
     // Default syntax highlighting
     hljs.initHighlightingOnLoad();
 
-    // Header
-    var menuToggle = $('#js-mobile-menu').unbind();
-    $('#js-navigation-menu').removeClass("show");
-    menuToggle.on('click', function(e) {
-      e.preventDefault();
-      $('#js-navigation-menu').slideToggle(function(){
-        if($('#js-navigation-menu').is(':hidden')) {
-          $('#js-navigation-menu').removeAttr('style');
-        }
-      });
-    });
+    // Removed hamburger menu toggle code entirely
 
     // Enable tooltips via Tippy.js
     if (Array.isArray(window.tooltips)) {
