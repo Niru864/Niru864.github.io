@@ -8,7 +8,7 @@ layout: null
     {% include head.html %}
   </head>
   <body>
-    {% include header.html %}  <!-- If you have a separate header partial -->
+    {% include header.html %}
 
     <!-- Hero Section -->
     <section id="hero" class="hero-section">
@@ -16,39 +16,40 @@ layout: null
         <h1>Thoughts, stories, and ideas.</h1>
         <p>
           Don’t limit yourself. Many people limit themselves to what they think 
-          they can do. You can go as far as your mind lets you. 
+          you can do. You can go as far as your mind lets you. 
           What you believe, remember, you can achieve.
         </p>
       </div>
     </section>
 
-    <!-- Blog Section -->
-    <section id="blog" class="blog-section">
-      <h2>Latest Posts</h2>
-      <div class="posts-list">
-        {% for post in site.posts limit:6 %}
-          {% include post-card.html post=post %}
-        {% endfor %}
-      </div>
-      <!-- Optional: a button linking to a separate /blog/ if you have more posts -->
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <h2>Projects</h2>
+      <!-- Add your project details here -->
+      <p>Your projects content goes here.</p>
     </section>
 
-    <!-- Authors Section -->
-    <section id="authors" class="authors-section">
-      <h2>Meet Our Authors</h2>
-      <div class="authors-list">
-        <!-- Show authors from _data/authors.yml or wherever you store them -->
-        <!-- Or just static content about each author -->
-      </div>
+    <!-- Resume Section -->
+    <section id="resume" class="resume-section">
+      <h2>Resume</h2>
+      <!-- Embed your resume or add content here -->
+      <p>Your resume content goes here.</p>
     </section>
 
-    <!-- Videos Section -->
-    <section id="videos" class="videos-section">
-      <h2>Videos</h2>
-      <!-- Embed YouTube or Vimeo, or show thumbnails linking to your videos -->
+    <!-- Research Section -->
+    <section id="research" class="research-section">
+      <h2>Research</h2>
+      <!-- Add details about your research -->
+      <p>Your research content goes here.</p>
     </section>
 
-    <!-- Footer -->
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="hobbies-section">
+      <h2>Hobbies</h2>
+      <!-- Details about your hobbies -->
+      <p>Your hobbies content goes here.</p>
+    </section>
+
     {% include footer.html %}
   </body>
 </html>
