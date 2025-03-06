@@ -1,20 +1,16 @@
 ---
+# Only the main Sass file needs front matter (the dashes are enough)
 ---
-
 @charset "utf-8";
 
-// Import partials from sass_dir (defaults to _sass)
-// Includes Bourbon, Neat, etc.
+// Import partials from `sass_dir` (defaults to `_sass`)
+// Includes Bourbon, Neat, and Bitters (thanks, thoughtbot!)
 @import
   "bourbon/bourbon",
   "base/base",
   "neat/neat",
   "layout"
 ;
-
-// Import your custom overrides at the end
-@import "custom"; // Points to _custom.scss in the _sass folder
-
 // Keyframe animation
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
