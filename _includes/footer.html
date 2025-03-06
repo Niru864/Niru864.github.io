@@ -1,11 +1,9 @@
 <footer class="site-footer">
-
   <div class="wrapper">
 
     <h3 class="footer-heading">{{ site.title }}</h3>
 
     <div class="site-navigation">
-
       <p><strong>Site Map</strong></p>
       <ul class="pages">
         {% include nav_links.html %}
@@ -13,7 +11,6 @@
     </div>
 
     <div class="site-contact">
-
       <p><strong>Contact</strong></p>
       <ul class="social-media-list">
         <li>
@@ -28,12 +25,17 @@
           <li>
             <a href="{{ social.url }}" title="{{ social.desc }}">
               <i class="fa fa-{{ social.icon }}"></i>
-              <span class="username">{% if social.username %}{{ social.username }}{% else %}{{ social.name }}{% endif %}</span>
+              <span class="username">
+                {% if social.username %}
+                  {{ social.username }}
+                {% else %}
+                  {{ social.name }}
+                {% endif %}
+              </span>
             </a>
           </li>
           {% endif %}
         {% endfor %}
-
       </ul>
     </div>
 
@@ -43,7 +45,6 @@
     </div>
 
   </div>
-
 </footer>
 
 <!-- Scripts -->
@@ -54,35 +55,35 @@
 <script src="//unpkg.com/tippy.js@5"></script>
 
 <script type="text/javascript">
-$(document).ready(function() {
-  // Default syntax highlighting
-  hljs.initHighlightingOnLoad();
+  $(document).ready(function() {
+    // Default syntax highlighting
+    hljs.initHighlightingOnLoad();
 
-  // Header
-  var menuToggle = $('#js-mobile-menu').unbind();
-  $('#js-navigation-menu').removeClass("show");
-  menuToggle.on('click', function(e) {
-    e.preventDefault();
-    $('#js-navigation-menu').slideToggle(function(){
-      if($('#js-navigation-menu').is(':hidden')) {
-        $('#js-navigation-menu').removeAttr('style');
-      }
+    // Header
+    var menuToggle = $('#js-mobile-menu').unbind();
+    $('#js-navigation-menu').removeClass("show");
+    menuToggle.on('click', function(e) {
+      e.preventDefault();
+      $('#js-navigation-menu').slideToggle(function(){
+        if($('#js-navigation-menu').is(':hidden')) {
+          $('#js-navigation-menu').removeAttr('style');
+        }
+      });
     });
-  });
 
-  // Enable tooltips via Tippy.js
-  if (Array.isArray(window.tooltips)) {
-    window.tooltips.forEach(function(tooltip) {
-      var selector = tooltip[0];
-      var config = tooltip[1];
-      tippy(selector, config);
-    })
-  }
-});
+    // Enable tooltips via Tippy.js
+    if (Array.isArray(window.tooltips)) {
+      window.tooltips.forEach(function(tooltip) {
+        var selector = tooltip[0];
+        var config = tooltip[1];
+        tippy(selector, config);
+      });
+    }
+  });
 </script>
 
 {% if page.custom_js %}
-<!-- Custom page specific js files -->
+  <!-- Custom page specific js files -->
   {% for js_file in page.custom_js %}
     <script src='/js/{{ js_file }}.js' type="text/javascript"></script>
   {% endfor %}
@@ -113,3 +114,15 @@ $(document).ready(function() {
   gtag('config', '{{ site.ga4_tracking_id }}');
 </script>
 {% endif %}
+
+<!-- Smooth Scrolling Script -->
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
