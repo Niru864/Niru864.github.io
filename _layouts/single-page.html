@@ -6,6 +6,62 @@ layout: null
 <html lang="en">
   <head>
     {% include head.html %}
+    :root {
+  --primary-color: #0A1828;   /* Classic blue for headings */
+  --secondary-color: #178582; /* Turquoise for links and accents */
+  --accent-color: #FF78AC;    /* Accent colour for highlights */
+  --background-color: #ffffff;
+  --text-color: #333333;
+}
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 40px;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 32px;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 24px;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+p,
+li {
+  font-size: 16px;
+}
+.bounce {
+  display: inline-block;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
   </head>
   <body>
 
@@ -16,7 +72,7 @@ layout: null
       <!-- Hero Section -->
       <section id="hero" class="hero-section">
         <div class="hero-content">
-          <h1>Rachel Abraham</h1>
+          <h1 class="bounce">Rachel Abraham</h1>
           <p>Welcome to my GitHub!</p>
         </div>
       </section>
