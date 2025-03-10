@@ -7,7 +7,6 @@ layout: null
   <head>
     {% include head.html %}
     <style>
-      
       :root {
         --primary-color: #0A1828;   /* Classic blue for headings */
         --secondary-color: #178582; /* Turquoise for links and accents */
@@ -45,8 +44,7 @@ layout: null
         margin-bottom: 10px;
       }
 
-      p,
-      li {
+      p {
         font-size: 16px;
       }
       
@@ -66,42 +64,39 @@ layout: null
           transform: translateY(0);
         }
       }
+      
       .resume-contact {
-          font-family: Arial, sans-serif;
-          color: #333;
-          background-color: #f9f9f9;
-          padding: 15px;
-          border-radius: 8px;
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
+        font-family: Arial, sans-serif;
+        color: #333;
+        background-color: #f9f9f9;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
         
-        .resume-contact a {
-          color: #0077b5; /* LinkedIn blue */
-          text-decoration: none;
-        }
+      .resume-contact a {
+        color: #0077b5;
+        text-decoration: none;
+      }
         
-        .resume-contact a:hover {
-          text-decoration: underline;
-        }
+      .resume-contact a:hover {
+        text-decoration: underline;
+      }
         
-        .resume-contact i {
-          margin-right: 5px;
-        }
-        
-        /* Custom colors for UMich and UWaterloo icons */
-        .fa-university.umich {
-          color: #00274C; /* UMich blue */
-        }
-        
-        .fa-university.uwaterloo {
-          color: #FFD54F; /* UWaterloo gold */
-        }
+      .resume-contact i {
+        margin-right: 5px;
+      }
+      
+      .fa-university.umich {
+        color: #00274C;
+      }
+      
+      .fa-university.uwaterloo {
+        color: #FFD54F;
+      }
     </style>
   </head>
   <body>
-
-  <body>
-
     <!-- Centered Container -->
     <div style="max-width: 900px; margin: 0 auto; text-align: center;">
       {% include header.html %}
@@ -114,227 +109,193 @@ layout: null
         </div>
       </section>
 
-       <!-- Projects Section -->
-        <section id="projects" class="projects-section">
-          <h2>Projects</h2>
-          <div>
-              <strong>Dialect-Aware Speech Transcription & Analysis</strong>, Computational linguistics<br>
-              
-          </div>
-          <div>
-              <strong>Evaluating ASR Models on Regional Dialect Variations in Spanish and French</strong>, Computational linguistics<br>
-              
-          </div>
-        </section>
+      <!-- Projects Section -->
+      <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+        <div>
+          <strong>Dialect-Aware Speech Transcription & Analysis</strong>, Computational linguistics<br>
+        </div>
+        <div>
+          <strong>Evaluating ASR Models on Regional Dialect Variations in Spanish and French</strong>, Computational linguistics<br>
+        </div>
+      </section>
 
-          <!-- Resume Section -->
-          <section id="resume" class="resume-section">
-            <h2>Resume</h2>
-          
-            <!-- Professional Summary -->
-            <div class="resume-summary">
-              <h3>Professional Summary</h3>
-              <p>
-                Detail-oriented Data Scientist and AI Consultant with expertise in machine learning, natural language processing, and data analysis. Proven track record in designing innovative AI solutions and optimizing data workflows. Adept at leveraging LLMs, LangChain, and advanced prompt engineering to drive impactful results.
-              </p>
-            </div>
-          
-            <!-- Contact Info -->
-            <div class="resume-contact">
-              <p>
-                <strong>Email:</strong> rachel6ad@gmail.com | 
-                <strong>Phone:</strong> 647-381-4494 | 
-                <strong>Location:</strong> Ann Arbor, MI
-              </p>
-              <p>
-                <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rachel-abraham" target="_blank">www.linkedin.com/in/rachel-abraham</a>
-              </p>
-            </div>
-          
-            <!-- Education -->
-            <h3>Education</h3>
-            <div>
-              <strong>University of Michigan - Ann Arbor</strong>, Ann Arbor, MI<br>
-              <em>Master of Applied Data Science (GPA 4.0)</em> | May 2024
-            </div>
-            <div>
-              <strong>University of Waterloo</strong>, Waterloo, ON<br>
-              <em>Bachelor of Science in Organic Chemistry (GPA 3.2)</em> | June 2017
-            </div>
-          
-            <!-- Experience -->
-            <h3>Experience</h3>
-            <div class="experience-item">
-              <strong>Prompt Engineering &amp; AI Consultant</strong>, Telus Digital<br>
-              <em>Part-time</em> | June 2024 - Present<br>
-              <ul>
-                <li>Developed metrics to evaluate the accuracy of LLM explanations and responses.</li>
-                <li>Analyzed LLM-generated responses for accuracy and relevance, ensuring high-quality deliverables.</li>
-                <li>Enhanced prompt performance through iterative analysis, boosting user interaction.</li>
-                <!-- Added skills from job description -->
-                <li>Leveraged expertise in LLMs and LangChain to create advanced solutions for document queries and text analysis.</li>
-                <li>Optimized workflows using Open Azure functions and Logic Apps, and integrated emerging models such as Open AI 4o and Mistral Gemini.</li>
-                <li>Enhanced productivity by utilizing GitHub Copilot and GenAI code builder in daily operations.</li>
-              </ul>
-            </div>
-            <div class="experience-item">
-              <strong>Machine Learning Researcher</strong>, University of Michigan<br>
-              <em>Part-time</em> | September 2022 - Present<br>
-              <ul>
-                <li>Designed methods to predict text informativeness and reading difficulty using NLP techniques and generative models.</li>
-                <li>Implemented RAG techniques and fine-tuned LLMs to improve text analysis accuracy.</li>
-                <li>Built Python pipelines for converting PDFs to raw text with PyTesseract and extracting keywords.</li>
-                <!-- Added skills from job description -->
-                <li>Utilized LangChain for vector indexing and efficient data retrieval in large datasets.</li>
-                <li>Actively participated in open-source AI project communities, contributing to advancements in prompt engineering.</li>
-              </ul>
-            </div>
-            <div class="experience-item">
-              <strong>AI &amp; Prompt Engineering Instructor</strong>, BusyQA<br>
-              <em>Seasonal</em> | November 2023 - March 2024<br>
-              <ul>
-                <li>Led courses on AI and prompt engineering, developing engaging and practical content.</li>
-                <li>Created demo labs featuring machine learning pipelines, Streamlit applications, and frameworks like LangChain.</li>
-                <li>Utilized PyTorch and scikit-learn to enhance curriculum relevance and student learning.</li>
-                <!-- Added skills from job description -->
-                <li>Demonstrated the integration of advanced LLM solutions and GitHub Copilot for code optimization in real-world applications.</li>
-              </ul>
-            </div>
-            <div class="experience-item">
-              <strong>Data Scientist</strong>, Triton Canada<br>
-              <em>Full-time</em> | September 2022 - September 2023<br>
-              <ul>
-                <li>Developed KPIs to highlight turnaround times using SQL and Power BI, ensuring compliance with data quality standards.</li>
-                <li>Collaborated with cross-functional teams to implement solutions that improved data management practices.</li>
-                <!-- Added skills from job description -->
-                <li>Managed SQL databases effectively and conducted email scanning using MAPI API to support data integrity and workflow automation.</li>
-              </ul>
-            </div>
-            <div class="experience-item">
-              <strong>Data Analyst</strong>, PwC Canada, Immigration Division<br>
-              <em>Full-time</em> | October 2020 - September 2022<br>
-              <ul>
-                <li>Created operations dashboards to provide transparency in immigration processes, enhancing decision-making speed.</li>
-                <li>Utilized Alteryx and Tableau for in-depth data analysis and reporting.</li>
-              </ul>
-            </div>
-            <div class="experience-item">
-              <strong>Data Analyst</strong>, ALS Global<br>
-              <em>Full-time</em> | May 2019 - March 2020<br>
-              <ul>
-                <li>Developed operational dashboards for environmental reporting and performed statistical analyses on chemical testing data.</li>
-              </ul>
-            </div>
-            <div class="experience-item">
-              <strong>Peer Mentorship Trainer</strong>, University of Waterloo, Student Success Office<br>
-              <em>Part-time</em> | February 2017 - October 2017<br>
-              <ul>
-                <li>Designed and implemented training sessions focused on inclusivity, networking, and campus resources.</li>
-                <li>Facilitated workshops to enhance academic skills and professional development.</li>
-                <li>Collaborated with campus departments to provide targeted support for diverse student groups.</li>
-              </ul>
-            </div>
-          
-            <!-- Technical Projects -->
-            <h3>Technical Projects</h3>
-            <div class="project-item">
-              <strong>OCR Text Readability</strong> | <em>Pytesseract, Traditional Readability Measures</em><br>
-              <span>December 2023</span>
-              <ul>
-                <li>Performed OCR text extraction on a chemistry corpus to determine readability.</li>
-                <li>Utilized measures like Flesch Reading Ease, Gunning Fog Index, and SMOG Index.</li>
-              </ul>
-            </div>
-            <div class="project-item">
-              <strong>Text Summarization</strong> | <em>BERT, SUMY, Google Cloud Natural Language API</em><br>
-              <span>August 2023</span>
-              <ul>
-                <li>Summarized lecture videos and transcripts using advanced NLP techniques.</li>
-                <li>Employed BLEU and ROUGE metrics to evaluate summarization quality.</li>
-              </ul>
-            </div>
-            <div class="project-item">
-              <strong>Climate Analysis and Forecasting</strong> | <em>Python, Dash, LSTM, CNN</em><br>
-              <span>February 2023</span>
-              <ul>
-                <li>Developed interactive dashboards for visualizing CO<sub>2</sub> emission levels.</li>
-                <li>Applied LSTM, BI-LSTM, and CNN models to forecast future AQI levels.</li>
-              </ul>
-            </div>
-          
-            <!-- Certifications -->
-            <h3>Certifications</h3>
-            <div class="certifications">
-              <ul>
-                <li>Certified Data Scientist – [Issuing Organization], [Year]</li>
-                <li>Advanced Machine Learning Specialization – [Issuing Organization], [Year]</li>
-                <li>Prompt Engineering &amp; AI Strategy – [Issuing Organization], [Year]</li>
-              </ul>
-            </div>
-          
-            <!-- Technical Skills -->
-            <h3>Technical Skills</h3>
-            <div class="technical-skills">
-              <p><strong>Programming Languages:</strong> Python, SQL</p>
-              <p>
-                <strong>Tools &amp; Frameworks:</strong> Gradio, LangChain, PyTorch, scikit-learn, Apache Spark, Hadoop, Alteryx, Tableau, Power BI, Docker, CI/CD with GitLab, and MLops tools (e.g., Mlflow, KubeFlow)
-              </p>
-              <p>
-                <strong>Additional Skills:</strong> LLM fine-tuning, prompt engineering, Open Azure Functions, Logic Apps, Open AI 4o, Mistral Gemini, GitHub Copilot, GenAI code builder, MAPI API, and responsive UI design.
-              </p>
-            </div>
-          
-            <!-- Leadership & Awards -->
-            <h3>Leadership &amp; Awards</h3>
-            <div class="leadership-awards">
-              <ul>
-                <li><strong>Scholarship:</strong> University of Michigan, 2023</li>
-                <li><strong>Award:</strong> Distinguished Teaching Assistant Award, University of Waterloo, 2016</li>
-                <li><strong>Conference:</strong> Grace Hopper Conference, 2023</li>
-              </ul>
-            </div>
-          </section>
+      <!-- Resume Section -->
+      <section id="resume" class="resume-section">
+        <h2>Resume</h2>
+        
+        <!-- Contact Info -->
+        <div class="resume-contact">
+          <p>
+            <strong>Email:</strong> rachel6ad@gmail.com | 
+            <strong>Phone:</strong> 647-381-4494 | 
+            <strong>Location:</strong> Ann Arbor, MI
+          </p>
+          <p>
+            <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rachel-abraham" target="_blank">www.linkedin.com/in/rachel-abraham</a>
+          </p>
+        </div>
 
-     <!-- Research Section -->
+        <!-- Education -->
+        <h3>Education</h3>
+        <div>
+          <strong>University of Michigan - Ann Arbor</strong>, Ann Arbor, MI<br>
+          <em>Master of Applied Data Science (GPA 4.0)</em> | May 2024
+        </div>
+        <div>
+          <strong>University of Waterloo</strong>, Waterloo, ON<br>
+          <em>Bachelor of Science in Organic Chemistry (GPA 3.2)</em> | June 2017
+        </div>
+
+        <!-- Experience -->
+        <h3>Experience</h3>
+        <div>
+          <strong>Prompt Engineering &amp; AI Consultant</strong>, Telus Digital<br>
+          <em>Part-time</em> | June 2024 - Present<br>
+          <p>Developed metrics to evaluate accuracy of LLM explanations and responses.</p>
+          <p>Analyzed LLM-generated responses for accuracy and relevance, ensuring high-quality deliverables.</p>
+          <p>Improved prompt performance through iterative analysis, significantly enhancing user interaction.</p>
+        </div>
+        <div>
+          <strong>Machine Learning Researcher</strong>, University of Michigan<br>
+          <em>Part-time</em> | September 2022 - Present<br>
+          <p>Designed methods to predict text informativeness and reading difficulty using NLP techniques and generative language models.</p>
+          <p>Implemented RAG techniques and fine-tuned LLMs to improve text analysis accuracy.</p>
+          <p>Built Python pipelines for converting PDFs to raw text, utilizing PyTesseract, and extracting keywords for classification.</p>
+        </div>
+        <div>
+          <strong>AI &amp; Prompt Engineering Instructor</strong>, BusyQA<br>
+          <em>Seasonal</em> | November 2023 - March 2024<br>
+          <p>Led courses on AI and prompt engineering, developing engaging content and materials focused on practical applications.</p>
+          <p>Created demo labs showcasing machine learning pipelines, Streamlit applications, and frameworks like LangChain and Hugging Face.</p>
+          <p>Utilized PyTorch, scikit-learn, and other technologies to enhance curriculum relevance and student learning.</p>
+        </div>
+        <div>
+          <strong>Data Scientist</strong>, Triton Canada<br>
+          <em>Full-time</em> | September 2022 - September 2023<br>
+          <p>Developed KPIs to highlight turnaround times using SQL and Power BI, ensuring compliance with data quality standards.</p>
+          <p>Collaborated with cross-functional teams to implement solutions that improved data management practices.</p>
+        </div>
+        <div>
+          <strong>Data Analyst</strong>, PwC Canada, Immigration Division<br>
+          <em>Full-time</em> | October 2020 - September 2022<br>
+          <p>Created operations dashboards to provide transparency in immigration processes, enhancing decision-making speed.</p>
+          <p>Utilized Alteryx and Tableau for in-depth data analysis and reporting, supporting compliance and operational efficiency.</p>
+        </div>
+        <div>
+          <strong>Data Analyst</strong>, ALS Global<br>
+          <em>Full-time</em> | May 2019 - March 2020<br>
+          <p>Developed operational dashboards for environmental reporting, conducting statistical analysis on chemical testing data to inform business decisions.</p>
+        </div>
+        <div>
+          <strong>Peer Mentorship Trainer</strong>, University of Waterloo, Student Success Office<br>
+          <em>Part-time</em> | February 2017 - October 2017<br>
+          <p>Developed and implemented training sessions focused on inclusivity, networking, and campus resources for new students.</p>
+          <p>Facilitated workshops and group sessions to enhance students' academic skills and professional development.</p>
+          <p>Collaborated with campus departments to provide targeted support for diverse student groups.</p>
+        </div>
+
+        <!-- Technical Projects -->
+        <h3>Technical Projects</h3>
+        <div>
+          <strong>OCR Text Readability</strong> | <em>Pytesseract, Traditional Readability Measures</em><br>
+          December 2023<br>
+          <p>Performed OCR text extraction using Pytesseract on a chemistry corpus, determining the text's readability.</p>
+          <p>Utilized traditional readability measures such as Flesch Reading Ease, Gunning Fog Index, and SMOG Index.</p>
+        </div>
+        <div>
+          <strong>Text Summarization</strong> | <em>BERT, SUMY, Google Cloud Natural Language API</em><br>
+          August 2023<br>
+          <p>Summarized lecture videos and transcripts of MADS courses using BERT and SUMY.</p>
+          <p>Employed BLEU and ROUGE metrics to evaluate summarization quality and performance.</p>
+        </div>
+        <div>
+          <strong>Climate Analysis and Forecasting</strong> | <em>Python, Dash, LSTM, CNN</em><br>
+          February 2023<br>
+          <p>Developed interactive dashboards for data visualization and analysis of CO<sub>2</sub> emission levels.</p>
+          <p>Applied LSTM, BI-LSTM, and CNN models to forecast future AQI levels, ensuring accurate and actionable insights.</p>
+        </div>
+
+        <!-- Technical Skills -->
+        <h3>Technical Skills</h3>
+        <div>
+          <strong>Programming Languages:</strong> Python, SQL
+        </div>
+        <div>
+          <strong>Tools:</strong> Gradio, LangChain, PyTorch, scikit-learn, Apache Spark, Hadoop, SQL, Alteryx, Tableau, Power BI
+        </div>
+
+        <!-- Leadership & Awards -->
+        <h3>Leadership &amp; Awards</h3>
+        <div>
+          <strong>Scholarship:</strong> University of Michigan, 2023
+        </div>
+        <div>
+          <strong>Awards:</strong> Distinguished Teaching Assistant Award, University of Waterloo, 2016
+        </div>
+        <div>
+          <strong>Conference:</strong> Grace Hopper Conference, 2023
+        </div>
+      </section>
+
+      <!-- Research Section -->
       <section id="research" class="research-section">
         <h2>Research</h2>
         <p>
-          My research focuses on leveraging AI and Large Language Models to enhance readability assessment in specialized domains like chemistry and biochemistry, addressing challenges such as domain-specific content and improving AI transparency and reliability.
+          My research focuses on advancing the understanding and application of readability assessment in specialized domains—particularly in chemistry and biochemistry—using cutting-edge AI technologies. I leverage Large Language Models like ChatGPT to develop nuanced, context-aware frameworks for evaluating scientific texts and address challenges such as integrating textual and non-textual data.
         </p>
-        <h3>Key Research Areas</h3>
-        <ul>
-          <li>Comparative analysis of readability metrics.</li>
-          <li>Reliability and effectiveness of LLMs in domain-specific tasks.</li>
-          <li>Improving explainability and transparency in AI-based assessments.</li>
-          <li>Identifying features of text difficulty in scientific domains.</li>
-        </ul>
+        <h3>Key Research Questions and Objectives</h3>
+        <div>
+          <strong>Comparative Analysis of Readability Metrics:</strong>
+          <p>How do LLM-based assessments compare to traditional readability formulas in terms of accuracy and comprehensiveness? What limitations of traditional metrics can LLMs overcome?</p>
+        </div>
+        <div>
+          <strong>Reliability and Effectiveness of LLMs:</strong>
+          <p>How reliable are LLMs like ChatGPT in classifying the readability of chemistry texts given domain-specific challenges? What are the implications of LLM biases?</p>
+        </div>
+        <div>
+          <strong>Explainability and Transparency:</strong>
+          <p>How can prompt engineering and feature attribution improve the transparency of AI-driven readability classifications?</p>
+        </div>
+        <div>
+          <strong>Identifying Features of Text Difficulty:</strong>
+          <p>What linguistic and domain-specific factors contribute to text difficulty, and how can these insights tailor educational materials?</p>
+        </div>
+        <h3>Methodological Approach</h3>
+        <div>
+          <strong>Prompt Engineering:</strong> I explore various techniques—including multi-choice formats and explicit rationale requests—to analyze the effectiveness of LLM-based assessments.
+        </div>
+        <div>
+          <strong>Post-Hoc Analysis:</strong> I use post-hoc analysis to understand which features influence readability judgments.
+        </div>
+        <div>
+          <strong>Explainability Techniques:</strong> I integrate concept-based explanations and feature attribution to enhance model transparency.
+        </div>
+        <h3>Broader Impact</h3>
+        <p>
+          My work contributes to AI, science education, and interpretability research by improving the accessibility of scientific texts and providing tools to tailor educational materials.
+        </p>
+        <h3>Future Directions</h3>
+        <div>
+          Exploring the application of LLMs to other scientific domains, investigating multimodal AI models for comprehensive text evaluation, and developing real-time readability assessment tools.
+        </div>
       </section>
-        
-
-       
 
       <!-- About Section -->
-    <section id="about" class="about-section">
+      <section id="about" class="about-section">
         <h2>About Me</h2>
-
-        <img src="{{ site.baseurl }}/assets/profile_pic.png" alt="Rachel" class="profile"> 
-
-        <p>
-          Hi, I'm Rachel! 
-        </p>
-
+        <img src="{{ site.baseurl }}/assets/profile_pic.png" alt="Rachel" class="profile">
+        <p>Hi, I'm Rachel!</p>
         <p>
           I am a passionate, multi-talented lifelong learner with a deep curiosity for technology and creativity. I recently graduated from the University of Michigan, Ann Arbor in May 2024, following my undergraduate studies at the University of Waterloo in Canada in June 2017. My academic background in Data Science and Machine Learning has set the stage for my focus on computational linguistics, natural language processing, text readability, and the evaluation of large language models.
         </p>
-
         <p>
           My technical expertise spans Python, SQL, and various machine learning frameworks, and I'm continuously exploring advanced topics like generative AI and deep learning. I thrive on merging data-driven insights with real-world applications, solving complex problems one algorithm at a time.
         </p>
-
         <p>
-          Beyond the technical realm, I love sharing my journey and experiences. I produce YouTube videos about skincare for people of color, and I enjoy connecting with others through creative and analytical projects. You can also check out my <a href="YOUR_LINKEDIN_PROFILE_URL">LinkedIn</a> to see a detailed account of my work and achievements. 
+          Beyond the technical realm, I produce YouTube videos about skincare for people of color and enjoy connecting with others through creative projects. You can also check out my <a href="YOUR_LINKEDIN_PROFILE_URL">LinkedIn</a> for a detailed account of my work and achievements.
         </p>
-
-</section>
+      </section>
+    </div>
   </body>
 </html>
